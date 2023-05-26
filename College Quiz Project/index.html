@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/quiz.css">
+    <title>GAIA Quiz</title>
+</head>
+
+<body>
+    <!-- PARALLAX - BACKGROUND -->
+    <section class="parallax">
+        <h1 id="text">GAIA QUIZ</h1>
+        <img src="./images/SVG/sun.svg" id="sun" alt="">
+
+        <!-- <img src="./images/SVG/mountainFar.svg" id="mFar" alt="">
+        <img src="./images/SVG/mountainMiddle.svg" id="mMid" alt=""> -->
+        <img src="./images/SVG/mountainClose.svg" id="mClose" alt="">
+
+        <img src="./images/SVG/grassTop2.svg" id="grassTop" alt="">
+        <img src="./images/SVG/grassTop.svg" id="grassMid" alt="">
+        <img src="./images/SVG/grassBottom.svg" id="grassBot" alt="">
+        <img src="./images/SVG/treeLeft.svg" id="treeLeft" alt="">
+        <img src="./images/SVG/treeRight.svg" id="treeRight" alt="">
+        <img src="./images/SVG/bushLeft.svg" id="bushLeft" alt="">
+        <img src="./images/SVG/bushRight.svg" id="bushRight" alt="">
+    </section>
+
+    <!-- MAIN GAME SECTION -->
+    <section class="main">
+
+        <!-- START BUTTON -->
+        <button type="submit" class="main_quiz-btn-start" id="start">Start Quiz</button>
+
+        <!-- MAIN QUIZ CONTAINER -->
+        <section class="main_quiz">
+
+            <!-- MAIN QUIZ TABS -->
+            <div class="main_quiz-tabs">
+                <div id="q1">Q1</div>
+                <div id="q2">Q2</div>
+                <div id="q3">Q3</div>
+                <div id="q4">Q4</div>
+                <div id="q5">Q5</div>
+                <div id="q6">Q6</div>
+            </div>
+
+            <!-- MAIN QUIZ QUESTION -->
+            <div class="main_quiz-question">
+                QUESTIONS GO HERE
+            </div>
+
+            <!-- MAIN QUIZ 3 POSSIBLE ANSWERS -->
+            <div class="main_quiz-answers">
+                <button id="a1">POSSIBLE ANSWERS</button>
+                <button id="a2">POSSIBLE ANSWERS</button>
+                <button id="a3">POSSIBLE ANSWERS</button>
+            </div>
+
+            <!-- SUBMIT AND NEXT BUTTONS -->
+            <button type="submit" class="main_quiz-btn" id="submit">Submit</button>
+            <button type="submit" class="main_quiz-btn" id="next">Next</button>
+
+            <!-- MAIN QUIZ RESULT BOX -->
+            <div class="main_quiz-result">
+                RESULT GOES HERE > 'CORRECT' OR 'WRONG WITH THE RIGHT ANSWER'
+            </div>
+
+        </section>
+    </section>
+    <!-- </main> -->
+
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

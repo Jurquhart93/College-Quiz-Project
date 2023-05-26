@@ -1,0 +1,139 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 45vh;
+  background-color: #82be5a;
+
+  z-index: 5;
+}
+
+.main_quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+
+  width: 600px;
+}
+
+.main_quiz-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+}
+
+.main_quiz-tabs div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 45px;
+}
+.main_quiz-tabs div:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+#q1 {
+  border-radius: 20px 0 0 0;
+  z-index: -1;
+}
+#q6 {
+  border-radius: 0 20px 0 0;
+  z-index: -1;
+}
+
+.main_quiz-question {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 45px;
+  margin-top: -1px;
+  padding: 1rem 0;
+  width: 100%;
+
+  border: 1px solid black;
+}
+
+.main_quiz-answers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: -1px;
+  width: 100%;
+  transition: 500ms;
+}
+
+.main_quiz-answers button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  transition: 500ms;
+}
+
+.main_quiz-answers button:hover {
+  background-color: aqua;
+}
+
+.main_quiz-result {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 45px;
+  margin-top: -1px;
+  padding: 1rem;
+  width: 100%;
+}
+
+.main_quiz-btn-start {
+  text-decoration: none;
+  display: inline-block;
+  padding: 2rem 4rem;
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  background-color: orangered;
+  font-size: 1.7rem;
+  box-shadow: 0 0 0.6rem black;
+  transition: 500ms;
+
+  z-index: 10;
+}
+
+.main_quiz-btn-start:hover {
+  color: black;
+  background-color: aqua;
+}
+
+.main_quiz-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 45px;
+  background-color: #66ff00;
+  transition: 500ms;
+}
+.main_quiz-btn:hover {
+  background-color: #5abe17;
+}
+
+.active {
+  background-color: aqua; /* change this to your desired color */
+}
